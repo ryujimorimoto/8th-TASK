@@ -1,12 +1,13 @@
 window.addEventListener("load", function() {
   const getNode = document.getElementById("techgeek-header");
-  const getButton = this.document.getElementById("click-change");
+  const getButton = document.getElementById("click-change");
   console.log(getNode);
   console.log(getButton);
   // getNode.append("追加しました");
- document.getElementById("click-change").onclick = function() {
+  getButton.onclick = function() {
    getNode.innerHTML = `<h1>テックギーク</h1>`;
- });
+  }
+});
 
 // window.addEventListener("load", function(){
 // const getNode = document.getElementById("get-node");
